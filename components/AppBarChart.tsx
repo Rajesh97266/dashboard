@@ -49,7 +49,7 @@ const AppBarChart = () => {
   useEffect(() => {
     const fetchChartData = async () => {
       try {
-        const response = await fetch("https://dummyjson.com/products?limit=6");
+        const response = await fetch("https://dummyjson.com/products?limit=8");
         const data = await response.json();
         const products = data.products;
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
